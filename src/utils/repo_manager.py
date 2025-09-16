@@ -1,7 +1,7 @@
 import subprocess
 import shutil
 import os
-from ..utils import logger, ROOT_DIR
+from . import logger, ROOT_DIR
 
 class RepoManager:
     def __init__(self, repo_url: str, issue_id: int):
