@@ -3,7 +3,7 @@ from dotenv import dotenv_values
 env = dotenv_values()
 
 ENVIRONMENT = env.get("ENVIRONMENT")
-if ENVIRONMENT == None:
+if ENVIRONMENT is None:
     raise ValueError("ENVIRONMENT variable not set in .env file")
 
 if ENVIRONMENT == "dev":
